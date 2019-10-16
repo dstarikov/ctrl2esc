@@ -1,0 +1,22 @@
+{
+  "name": "ctrl2esc",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Map Control to Escape if not used as a modifier with another key",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "input"
+  ],
+  "input_components": [
+    {
+      "name": "ctrl2esc",
+      "type": "ime",
+      "id": "ctrl2esc",
+      "description": "Map Control to Escape if not used as a modifier with another key",
+      "language": "en-US",
+      "layouts": ["us"]
+    }
+  ]
+}
