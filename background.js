@@ -62,7 +62,6 @@ chrome.input.ime.onKeyEvent.addListener(
           handled = true;
         }
       } else if (ctrlKey) {
-        keyData.ctrlKey = ctrlKey;
         chrome.input.ime.sendKeyEvents({"contextID": contextID, "keyData": [keyData]});
         lastRemappedKeyEvent = keyData;
         handled = true;
